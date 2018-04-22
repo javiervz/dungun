@@ -18,7 +18,7 @@ def home():
 def transformed():
   text = request.form['text']
   output=verb_to_mapudungun(text)
-  return render_template("results.html", data=output)#output=output)
+  return render_template("results.html", output=output)
 
 if __name__ == '__main__':
     app.run()
