@@ -142,15 +142,3 @@ def verb_to_mapudungun(verb_esp,verbos):
 
 verb_to_mapudungun('barrer',verbos)
 
-
-# In[75]:
-
-
-df
-
-
-# In[58]:
-
-
-row
-
