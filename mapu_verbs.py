@@ -136,5 +136,5 @@ def verb_to_mapudungun(verb_esp):
 # In[11]:
 
 
-verb_to_mapudungun('conversar',personas,verbos,consonantes)
+verb_to_mapudungun('conversar')
 
