@@ -130,7 +130,7 @@ def verb_to_mapudungun(verb_esp):
     df=pd.DataFrame(conjugacion)
     df = df[['singular', 'dual', 'plural']]
                     
-    return df.to_html
+    return df.to_html()
 
 
 # In[11]:
