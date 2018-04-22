@@ -15,8 +15,8 @@ def home():
 
 def transformed():
   verbos=pd.read_csv('verbs.csv',header=0,sep='\t')
-  verbos_esp=[verbo for verbo in verbos.esp]
-  verbos_mapu=[verbo for verbo in verbos.mapu]
+  verbos_esp=[verbo for verbo in verbos['esp']]
+  verbos_mapu=[verbo for verbo in verbos['mapu']]
   verbos={esp:mapu for (esp,mapu) in zip(verbos_esp,verbos_mapu)}
   text = request.form['text']
   output=verb_to_mapudungun(text,verbos)
